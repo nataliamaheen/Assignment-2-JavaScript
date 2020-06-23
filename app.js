@@ -314,24 +314,246 @@
 
 
 //Q11
-// var d = new Date();
-// var n = d.getHours();
-// document.write(d);
+// var CurrentDate= new Date();
+// document.write("<br> Current Date:" + CurrentDate);
+// var hour=CurrentDate.getHours();
+// var minute= CurrentDate.getMinutes();
+// var second= CurrentDate.getSeconds();
+// var tshow= document.write("<br>" + hour+ ":" + minute+ ":" + second);
+// var tAhead=document.write(" " + hour-1+ ":" + minute + ":" + second );
+// var aheadDate= new Date();
+// aheadDate.setHours(hour-1, minute, second);
+// document.write("<br> One hour it was:" + aheadDate );
+
+//Q12
+// var c= new Date("dec 5, 2015 23:09:37");
+// document.write("Current date:" + c+ "<br>");
+// var year= c.getFullYear();
+// var res= c.setFullYear(year-100);
+// var y= new Date(c);
+// document.write("100 hour back, it was: " + y);
+
+   // Q13
+// var age= prompt("Enter your age");
+// var CurrentDate= new Date();
+// var currentyear= CurrentDate.getFullYear();
+// var birthyear= currentyear-age;
+// document.write("Your age is " + age);
+// document.write("<br> Your birth year is " + birthyear);
+
+//Q14
+// document.write("<h1> K-Electric Bill </h1>");
+// var name= prompt("Enter User Name");
+// document.write("<br> User Name " + name);
+// var Month=prompt("Enter Month:");
+// document.write("<br> Month: " + Month);
+// var Numofunit= prompt("Enter Units");
+// Numofunit= Math.round(Numofunit);
+// Numofunit= Numofunit.toFixed(2);
+// document.write("<br> Units are" + Numofunit);
+// var characterperUnit= prompt("Enter Charges per units");
+// document.write("<br>Charges of a bill" + characterperUnit);
+// var mul= Numofunit*characterperUnit;
+// mul= Math.round(mul);
+// mul= mul.toFixed(2);
+// document.write("<br> Net Amount payable Wihin Due date");
+// var lastSurcharge= prompt("Enter late payment surcharge");
+// lastSurcharge=Math.round(lastSurcharge);
+// lastSurcharge= lastSurcharge.toFixed(2);
+// document.write("<br> Month:" + lastSurcharge);
+// var total= Numofunit*characterperUnit+lastSurcharge;
+// total= Math.round(total);
+// total= mul.toFixed(2);
+// document.write("<br> Gross Amount Payable (After Due Date):" + total);
+
+    
+
+    //CHP 35-38                                                
+
+//Q1
+// var rightNow = new Date();
+// document.write(rightNow);
+
+//Q2                             
+// var a= prompt("Enter 1st name");
+// var b= prompt("Enter 2nd name");
+// alert(a + " " + b);
+// 
+// 
+
+//Q3
+// var num1= +prompt("Enter First value:");
+// var num2= +prompt("Enter second value:");
+// document.write("Sum of two numbers is :" + add(num1,num2))
+// function add(a,b){
+//     return(a+b);
+// }
+
+//Q4
+// var num1= +prompt("Enter First value:");
+// var num2= +prompt("Enter second value:");
+// var operator= +prompt("Enter operator:");
+// document.write("<br> You Calcultion is: " +num1+" " + operator+ " " + num2);
+// function cal(num1, operator, num2){
+//     if(operator==="+"){
+//         return(num1+num2);
+//     }
+//     if(operator==="-"){
+//         return(num1-num2);
+//     }
+//     if(operator==="*"){
+//         return(num1*num2);
+//     }
+//     if(operator==="/"){
+//         return(num1/num2);
+//     }
+//     if(operator==="%"){
+//         return(num1%num2);
+//     }
+// }
+
+//Q5
+// var inputnum=+prompt("Enter any number");
+// document.write("<br>Square of Argument number " + inputnum);
+// function square(sq){
+//     var sum=" ";
+//     sum= Math.pow(sq, 2)
+//     return(sum);
+// }
+
+//Q6
+// var num=+prompt("Enter number for factorial ");
+// document.write("<br> Factorial of a number ");
+// function fact(n){
+//     var sum=1;
+//     if(num ===0 ||  num===1)
+//     return 1;
+//     for (var i=n; i>0; i--){
+//         sum= sum*n;
+//         n--;
+//     }
+//     return (sum);
+// }
+// for(var i= num-1; i>=1; i--)
+// {
+//     num *= 1;
+    
+// }
+// return num;
+
+//Q7
+// var first = prompt("Enter 1st num:");
+// var  second= prompt("Enter 2nd num:");
+// document.write("<br>Counting from " + first + "to " + second);
+// +showcount(first, second)
+// function showcount(num1, num2){
+//     for(var i= num1; i<=num2;i++){
+//         document.write("<br>" + i);
+//         num1++;
+//     }
+
+// }
+
+//Q8                             
+// var base= prompt("Please Enter base of a triangle");
+// var perpendicular= prompt("Please enyer perpendicular");
+// document.write("<br>Base is:" + base + "<br>" +perpendicular);
+// function calcultehypotenus(base, perpendicular){
+//     var hypo=" ";
+//     hypo= calculatesq
+// }
+
+//Q9
+// var area=" ";
+// var width= prompt("Enter width of a rectangle");
+// var height=prompt("Enter height of a rectangle");
+// document.write("<br>" + calAreaRec(width, height)); 
+// function calAreaRec(width,height){
+//     area=width*height;
+// document.write(area);
+// return (area);
+// }
+// document.write("<br>" + calAreaRec(5,4));
+// function calAreaRec(a,b){
+//     alert(a*b);
+// }
+
+
+//Q10
+// var u_pal=prompt("Enter a word Palindrome");
+// var pal="palindrome";
+// function pali(){
+//     if(u_pal!= pal){
+//         document.write("<br> Fail Enter Wrong word!");
+
+//     }
+//     else
+//     {
+// document.write("<br> Psssed");
+//     }
+// }
+// pali();
+
+
+
+
+//Q11
+// function first_letter_capital(letterOne){
+//     return letterOne.replace(/\w\5*/g, function(txt){return txt.charAt(0).toUpperCase()+ txt.substr(1).toLowerCase();});
+
+// }
+// document.writeln(first_letter_capital('the quick brown fix'));
 
 //Q12
 
+  
+// function longestWord(string) {
+//     var str = string.split(" ");
+//     var longest = 0;
+//     var word = null;
+//     str.forEach(function(str) {
+//         if (longest < str.length) {
+//             longest = str.length;
+//             word = str;
+//         }
+//     });
+//     return word;
+// }
+// document.write(longestWord("Web Development Tutorial"));
 
-    // var dob_entry = getTextValue();
-    // var split_dob = dob_entry.split("/");
-    // var month = split_dob[0];
-    // var day = split_dob[1];
-    // var year = split_dob[2];
-    // var dob_asdate = new Date(year, month, day);
-    // var today = new Date();
-    // var mili_dif = Math.abs(today.getTime() - dob_asdate.getTime());
-    // var age = (mili_dif / (1000 * 3600 * 24 * 365.25));
-    // within_age_range=(14<age & age<24);
-    
-    // alert(age);
 
-    
+
+
+
+//Q13
+// function character_counting(str_1, letter)
+// {
+//     var letter_Count= 0;
+//     for(var position=0; position<str_1.length; position++)
+//     {
+//         if(str_1.charAt(position)==letter){
+//             letter_Count+=1;
+//         }
+//     }
+//     return letter_Count;
+// }
+// alert(character_counting('w3resources.com' , 'o'));
+
+//Q14
+// function circle(radius)
+// {
+//     this.radius = radius;
+
+//     this.area = function () 
+//     {
+//         return Math.PI * this.radius * this.radius;
+//     };
+  
+//     this.circumference = function ()
+//     {
+//         return 2*Math.PI*this.radius;
+//     };
+// }
+// var c = new circle(3);
+// console.log('Area =', c.area().toFixed(2));
+// console.log('Cicumference =', c.circumference().toFixed(2));
